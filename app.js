@@ -1,14 +1,14 @@
 function insertDash(num) {
-    var inStr = String(num);
-    var outStr = inStr[0], ii;
+    var numInStr = String(num);
+    var numOutStr = numInStr[0], ii;
   
-    for (ii = 1; ii < inStr.length; ii++) {
-      if (inStr[ii-1] % 2 !== 0 && inStr[ii] % 2 !== 0) {
-        outStr += '-';
+    for (ii = 1; ii < numInStr.length; ii++) {
+      if (numInStr[ii-1] % 2 !== 0 && numInStr[ii] % 2 !== 0) {
+        numOutStr += '-';
       }
   
-      outStr += inStr[ii];
+      numOutStr += numInStr[ii];
     }
   
-    return outStr;
+    return numOutStr;
   }
